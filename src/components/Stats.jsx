@@ -53,12 +53,12 @@ const StatCard = ({ label, value, suffix, description, delay }) => {
 
 export default function Stats() {
   return (
-    <section className="w-full py-20 pb-40 bg-[#0e021a] px-4 -mt-12">
+    <section className="w-full py-20 md:pb-30 pb-10 bg-[#0e021a] md:px-4 px-6 -mt-12">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 mb-10 text-center">
+        <h2 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 mb-10 text-center">
           Reach & Impact
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <StatCard
               key={stat.label}
