@@ -42,14 +42,72 @@
 
 }
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
+  /* @apply text-white; */
+
+  background: linear-gradient(-45deg, #120817, #1a0f2d, #10071c, #1f0a2e);
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
   font-family: var(--font-robert-medium);
   width: 100dvw;
   /* background-color: white; */
-  background-color: #dfdff0;
+  /* background-color: #dfdff0; */
+  /* background-color: #0f172a; */
   overflow-x: hidden;
   color: black;
   margin-bottom: 0;
+}
+
+
+.bg-dark {
+  background-color: #0f172a;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #1e1b4b, #2e1065, #1e3a8a);
+  opacity: 0.2;
+  filter: blur(120px);
+  animation: backgroundGlow 12s ease infinite;
+}
+
+.glow-button {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.5),
+              0 0 40px rgba(168, 85, 247, 0.4);
+}
+
+.glow-avatar {
+  animation: float 6s ease-in-out infinite;
+  /* box-shadow: 0 0 40px rgba(139, 92, 246, 0.6),
+              0 0 60px rgba(59, 130, 246, 0.3); */
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes backgroundGlow {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.2); opacity: 0.3; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
 }
 
 #telegram-container iframe {
@@ -92,7 +150,7 @@ body {
 
 .font-zentry {
   font-family: var(--font-zentry);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .font-circular-web {
   font-family: var(--font-circular-web);
@@ -185,51 +243,4 @@ body {
 
 #clip {
   perspective: 1000px; /* Needed for 3D rotation to look realistic */
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.animate-fadeInDown {
-  animation: fadeInDown 0.6s ease forwards;
-}
-
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-slide-in {
-  animation: slide-in 0.3s ease-out;
-  /* color: #01010146; */
 }
