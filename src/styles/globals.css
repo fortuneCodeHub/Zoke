@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'circular-web';
+  src: url('/fonts/circularweb-book.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'general';
+  src: url('/fonts/general.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'robert-medium';
+  src: url('/fonts/robert-medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'robert-regular';
+  src: url('/fonts/robert-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'zentry';
+  src: url('/fonts/zentry-regular.woff2') format('woff2');
+}
+
+:root {
+  /* Font */
+  --font-zentry: 'zentry', sans-serif;
+  --font-circular-web: 'circular-web', sans-serif;
+  --font-general: 'general', sans-serif;
+  --font-robert-medium: 'robert-medium', sans-serif;
+  --font-robert-regular: 'robert-regular', sans-serif;
+
+  /* Colors */
+  --primary-blue-50: #DFDFF0;
+  --primary-blue-75: #DFDFF2;
+  --primary-blue-100: #F0F2FA;
+  --primary-blue-200: #010101;
+  --primary-blue-300: #4FB7DD;
+  /* --primary-violet-300: #7b53ff; */
+  --primary-violet-300: #5724FF;
+  --primary-yellow-100: #8E983F;
+  --primary-yellow-300: #EDFF66;
+
+}
+
+body {
+  font-family: var(--font-robert-medium);
+  width: 100dvw;
+  /* background-color: white; */
+  background-color: #dfdff0;
+  overflow-x: hidden;
+  color: black;
+  margin-bottom: 0;
+}
+
+#telegram-container iframe {
+  display: none !important;
+  align-items: center !important;
+  margin: 0 auto !important; /* Center it */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+  width: 28px !important;
+  height: 28px !important;
+  padding: 10px !important;
+  background-color: rgba(128, 128, 128, 0.336) !important;
+  border-radius: 3px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 10px !important;
+  display: none !important;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  display: block !important;
+}
+
+
+.word-tight {
+  word-spacing: 0.05em;
+}
+.word-normal {
+  word-spacing: 0.25em;
+}
+.word-wide {
+  word-spacing: 0.5em;
+}
+
+.font-zentry {
+  font-family: var(--font-zentry);
+  letter-spacing: 1px;
+}
+.font-circular-web {
+  font-family: var(--font-circular-web);
+}
+.font-general {
+  font-family: var(--font-general);
+}
+.font-robert-medium {
+  font-family: var(--font-robert-medium);
+}
+.font-robert-regular {
+  font-family: var(--font-robert-regular);
+}
+
+.text-primary-blue-50 {
+  color: var(--primary-blue-50);
+}
+.text-primary-blue-75 {
+  color: var(--primary-blue-75);
+}
+.text-primary-blue-100 {
+  color: var(--primary-blue-100);
+}
+.text-primary-blue-200 {
+  color: var(--primary-blue-200);
+}
+.text-primary-blue-300 {
+  color: var(--primary-blue-300);
+}
+.text-primary-violet-300 {
+  color: var(--primary-violet-300);
+}
+.text-primary-yellow-100 {
+  color: var(--primary-yellow-100);
+}
+.text-primary-yellow-300 {
+  color: var(--primary-yellow-300);
+}
+
+.border-primary-blue-50 {
+  border-color: var(--primary-blue-50);
+}
+.border-primary-blue-75 {
+  border-color: var(--primary-blue-75);
+}
+.border-primary-blue-100 {
+  border-color: var(--primary-blue-100);
+}
+.border-primary-blue-200 {
+  border-color: var(--primary-blue-200);
+}
+.border-primary-blue-300 {
+  border-color: var(--primary-blue-300);
+}
+.border-primary-violet-300 {
+  border-color: var(--primary-violet-300);
+}
+.border-primary-yellow-100 {
+  border-color: var(--primary-yellow-100);
+}
+.border-primary-yellow-300 {
+  border-color: var(--primary-yellow-300);
+}
+
+
+.bg-primary-blue-50 {
+  background-color: var(--primary-blue-50);
+}
+.bg-primary-blue-75 {
+  background-color: var(--primary-blue-75);
+}
+.bg-primary-blue-100 {
+  background-color: var(--primary-blue-100);
+}
+.bg-primary-blue-200 {
+  background-color: var(--primary-blue-200);
+}
+.bg-primary-blue-300 {
+  background-color: var(--primary-blue-300);
+}
+.bg-primary-violet-300 {
+  background-color: var(--primary-violet-300);
+}
+.bg-primary-yellow-100 {
+  background-color: var(--primary-yellow-100);
+}
+.bg-primary-yellow-300 {
+  background-color: var(--primary-yellow-300);
+}
+
+#clip {
+  perspective: 1000px; /* Needed for 3D rotation to look realistic */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.6s ease forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+  /* color: #01010146; */
+}
