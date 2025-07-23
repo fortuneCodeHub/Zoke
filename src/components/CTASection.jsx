@@ -18,12 +18,16 @@ export default function CTASection() {
       </h2>
 
       <div className="flex flex-col sm:flex-row justify-center gap-6 mb-6">
-        <Link
-          href="mailto:youremail@example.com"
-          className="bg-purple-600 hover:bg-purple-500 text-white font-medium px-6 py-3 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-purple-500/40"
+        <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            target="_blank"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=zokebiz@gmail.com"
+            className="bg-purple-600 hover:bg-purple-500 text-white font-medium px-6 py-3 rounded-xl shadow-lg transition-transform hover:shadow-purple-500/40"
         >
-          Let’s Talk
-        </Link>
+            Let’s Talk
+        </motion.a>
+
         <Link
           href="https://x.com/z0ke"
           target="_blank"

@@ -8,6 +8,10 @@ const logos = [
   { name: "Emperoronsol", src: "/images/emperoronsol.jpg", link: "https://x.com/Emperoronsol" },
   { name: "Doginal Dogs", src: "/images/doginal-dogs.jpg", link: "https://x.com/doginaldogsx" },
   { name: "ZokeCoin", src: "/images/zoke-project.jpeg", link: "https://x.com/z0ke" },
+  { name: "Axiom", src: "/images/axiomexchange.jpg", link: "https://x.com/AxiomExchange" },
+  { name: "GMGN.Ai", src: "/images/gmgn.ai.jpg", link: "https://x.com/gmgnai" },
+  { name: "Solpump", src: "/images/solpump.jpg", link: "https://x.com/solpumpcom" },
+  { name: "Vyper", src: "/images/vyper.jpg", link: "https://x.com/TradeonVyper" },
   // Add more logos as needed
 ];
 

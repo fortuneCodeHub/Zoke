@@ -45,7 +45,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <p className="text-sm text-gray-400">your@email.com</p>
+        <p className="text-sm text-gray-400">zokebiz@gmail.com</p>
 
         <p className="italic text-purple-300 text-sm">
           “Building Web3 one connection at a time.”
