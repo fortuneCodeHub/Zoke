@@ -53,7 +53,7 @@ export default function About() {
                 >
                 I'm a passionate Web3 KOL and Twitter Ambassador with over{" "}
                 <span className="relative inline-block">
-                    <span className="z-10 relative font-semibold">36.5k followers</span>
+                    <span className="z-10 relative font-semibold">35.5k followers</span>
                     <motion.span
                         layoutId="highlight"
                         className="absolute bottom-0 left-0 h-1 w-full bg-purple-500/60 rounded"
@@ -115,17 +115,18 @@ export default function About() {
                             Resume
                         </Link>
                         <Link
-                            href="https://x.com/yourhandle"
+                            href="https://x.com/z0ke"
                             className="underline hover:text-purple-400 transition"
                             target="_blank"
                         >
                             X Profile
                         </Link>
                         <Link
-                            href="/articles"
+                            href="https://twitter.com/z0ke/status/1944766332630966752"
+                            target="_blank"
                             className="underline hover:text-purple-400 transition"
                         >
-                            Threads
+                            X Threads
                         </Link>
                     </motion.div>
                 </div>

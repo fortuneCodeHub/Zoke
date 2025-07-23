@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 const stats = [
-  { label: 'Followers', value: 36500, suffix: '+', description: 'Followers on X' },
+  { label: 'Followers', value: 35500, suffix: '+', description: 'Followers on X' },
   { label: 'Campaigns', value: 50, suffix: '+', description: 'Projects Promoted' },
   { label: 'Engagement', value: 10000000, suffix: '+', description: 'Impressions Delivered' },
   { label: 'Regions', value: 1, suffix: '', description: 'Global Web3 Audience' },

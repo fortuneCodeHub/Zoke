@@ -40,13 +40,13 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-[50px]">
-          <a href="#" className="text-white hover:text-purple-300 transition">
+          <a href="#about" className="text-white hover:text-purple-300 transition">
             About
           </a>
-          <a href="#" className="text-white hover:text-purple-300 transition">
+          <a href="#work" className="text-white hover:text-purple-300 transition">
             Work
           </a>
-          <a href="#" className="text-white hover:text-purple-300 transition">
+          <a href="#contact" className="text-white hover:text-purple-300 transition">
             Contact
           </a>
         </div>
@@ -74,13 +74,13 @@ export default function Navbar() {
       {/* Mobile Nav Menu */}
       {isOpen && (
         <div className="md:hidden px-2 pb-3 pt-2 bg-[#100918]/90 backdrop-blur-sm">
-          <a href="#" className="block px-3 py-2 text-white rounded-md hover:bg-purple-800/30">
-            Home
-          </a>
-          <a href="#" className="block px-3 py-2 text-white rounded-md hover:bg-purple-800/30">
+          <a href="#aout" className="block px-3 py-2 text-white rounded-md hover:bg-purple-800/30">
             About
           </a>
-          <a href="#" className="block px-3 py-2 text-white rounded-md hover:bg-purple-800/30">
+          <a href="#work" className="block px-3 py-2 text-white rounded-md hover:bg-purple-800/30">
+            Work
+          </a>
+          <a href="#contact" className="block px-3 py-2 text-white rounded-md hover:bg-purple-800/30">
             Contact
           </a>
         </div>

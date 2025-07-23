@@ -59,7 +59,8 @@ export default function Hero() {
             to every project I touch.
           </p>
           <a
-            href="#"
+            href="https://x.com/z0ke"
+            target='_blank'
             className="mt-6 inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold px-6 py-3 rounded-full shadow-xl transition-transform hover:scale-105 glow-button"
           >
             Let’s Collaborate
